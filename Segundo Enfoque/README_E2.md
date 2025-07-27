@@ -41,7 +41,7 @@ bioreactor-cacao/
 pip install mpi4py dolfinx ufl petsc4py numpy matplotlib pyvista
 
 # 2. Ejecutar simulación de caja de madera
-python run_evaporation_analysis_<material>.py
+python run_evaporation_analysis_box.py
 
 # 3. Ejecutar simulación de tambor hexagonal
 python run_evaporation_analysis_hexagon_.py
@@ -100,25 +100,21 @@ python run_evaporation_analysis_hexagon_.py
 
 ## 📝 Notas Adicionales
 
-```markdown
 - El modelo resuelve **conducción térmica** dentro del material (mecanismo principal).
 - **Convección externa** como condición de frontera (h = 10 W/m²·K).
 - **Ventilación pasiva:** aire fluye por aberturas inferiores y laterales (caja) o ranuras del tambor.
 - **Evaporación del contenido:** enfriamiento activo según humedad y área de superficie.
 - **Generación de calor de fermentación** variable según cinética enzimática.
 - Resultados validados con datos experimentales de fermentación de cacao.
-```
 
 ## 🔮 Extensiones Futuras
 
-```markdown
 - [ ] Modelar espacio de aire superior en la caja (actualmente implícito).
 - [ ] Incorporar control de temperatura activo (resistencias o refrigeración).
 - [ ] Optimización multiobjetivo: uniformidad térmica vs. retención de humedad.
 - [ ] Análisis de sensibilidad paramétrica: propiedades térmicas y coeficientes de convección/evaporación.
 - [ ] Evaluar efectos de velocidad de rotación y ángulo de tambor en la transferencia de calor.
 - [ ] Comparar desempeño ante variaciones de carga y propiedades del grano.
-```
 
 ---
 
