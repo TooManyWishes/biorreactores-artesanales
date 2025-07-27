@@ -1,0 +1,1199 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="3.0" xmlns:xi="https://www.w3.org/2001/XInclude">
+  <Domain>
+    <Grid Name="mesh" GridType="Uniform">
+      <Topology TopologyType="Tetrahedron" NumberOfElements="3171" NodesPerElement="4">
+        <DataItem Dimensions="3171 4" NumberType="Int" Format="HDF">bioreactor_hexagon_fixed.h5:/Mesh/mesh/topology</DataItem>
+      </Topology>
+      <Geometry GeometryType="XYZ">
+        <DataItem Dimensions="938 3" Format="HDF">bioreactor_hexagon_fixed.h5:/Mesh/mesh/geometry</DataItem>
+      </Geometry>
+    </Grid>
+    <Grid Name="Temperatura" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="300" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/300</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/3600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/7200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="10800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/10800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="14400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/14400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="18000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/18000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="21600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/21600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="25200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/25200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="28800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/28800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="32400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/32400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="36000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/36000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="39600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/39600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="43200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/43200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="46800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/46800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="50400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/50400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="54000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/54000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="57600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/57600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="61200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/61200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="64800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/64800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="68400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/68400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="72000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/72000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="75600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/75600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="79200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/79200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="82800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/82800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="86400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/86400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="90000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/90000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="93600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/93600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="97200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/97200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="100800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/100800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="104400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/104400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="108000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/108000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="111600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/111600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="115200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/115200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="118800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/118800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="122400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/122400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="126000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/126000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="129600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/129600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="133200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/133200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="136800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/136800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="140400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/140400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="144000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/144000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="147600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/147600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="151200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/151200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="154800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/154800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="158400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/158400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="162000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/162000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="165600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/165600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="169200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/169200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="172800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/172800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="176400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/176400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="180000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/180000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="183600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/183600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="187200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/187200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="190800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/190800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="194400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/194400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="198000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/198000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="201600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/201600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="205200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/205200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="208800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/208800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="212400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/212400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="216000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/216000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="219600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/219600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="223200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/223200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="226800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/226800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="230400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/230400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="234000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/234000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="237600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/237600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="241200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/241200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="244800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/244800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="248400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/248400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="252000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/252000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="255600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/255600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="259200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/259200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="262800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/262800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="266400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/266400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="270000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/270000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="273600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/273600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="277200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/277200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="280800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/280800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="284400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/284400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="288000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/288000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="291600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/291600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="295200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/295200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="298800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/298800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="302400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/302400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="306000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/306000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="309600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/309600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="313200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/313200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="316800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/316800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="320400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/320400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="324000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/324000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="327600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/327600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="331200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/331200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="334800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/334800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="338400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/338400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="342000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/342000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="345600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/345600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="349200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/349200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="352800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/352800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="356400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/356400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="360000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/360000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="363600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/363600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="367200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/367200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="370800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/370800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="374400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/374400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="378000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/378000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="381600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/381600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="385200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/385200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="388800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/388800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="392400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/392400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="396000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/396000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="399600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/399600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="403200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/403200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="406800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/406800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="410400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/410400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="414000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/414000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="417600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/417600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="421200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/421200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="424800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/424800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="428400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/428400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="432000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/432000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="435600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/435600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="439200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/439200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="442800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/442800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="446400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/446400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="450000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/450000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="453600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/453600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="457200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/457200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="460800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/460800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="464400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/464400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="468000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/468000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="471600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/471600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="475200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/475200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="478800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/478800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="482400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/482400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="486000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/486000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="489600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/489600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="493200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/493200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="496800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/496800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="500400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/500400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="504000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/504000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="507600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/507600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="511200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/511200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="514800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/514800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="518400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/518400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="522000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/522000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="525600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/525600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="529200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/529200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="532800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/532800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="536400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/536400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="540000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/540000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="543600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/543600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="547200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/547200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="550800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/550800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="554400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/554400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="558000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/558000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="561600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/561600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="565200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/565200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="568800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/568800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="572400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/572400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="576000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/576000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="579600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/579600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="583200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/583200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="586800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/586800</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="590400" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/590400</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="594000" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/594000</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="597600" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/597600</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="601200" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/601200</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Temperatura" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="604800" />
+        <Attribute Name="Temperatura" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="938 1" Format="HDF">bioreactor_hexagon_fixed.h5:/Function/Temperatura/604800</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>
