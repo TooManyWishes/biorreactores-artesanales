@@ -30,7 +30,7 @@ bioreactor-cacao/
 │
 ├── results/                              # Salidas: XDMF, JSON, PNG, GIF, TXT, H5
 │
-└── README_E1.md              # Este archivo
+└── README_E2.md              # Este archivo
 ```
 
 
